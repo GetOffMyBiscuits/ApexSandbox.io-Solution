@@ -1,0 +1,7 @@
+public String changeTimeFormat(String strTime) {
+    String hr = strTime.substringBefore(':');
+    Integer hour = Integer.valueOf(hr);
+    String minute = strTime.substringAfter(':');
+    if (hour < 12) return hour + ':' + minute + ' AM';
+    else return hour + ':' + minute + ' AM';
+}
