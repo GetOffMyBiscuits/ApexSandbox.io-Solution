@@ -3,4 +3,5 @@ public Integer fibonacci(Integer n) {
     for (Integer i = 0; i < n; i++){
         return fib + fib;
     }
+    return 1
 }
