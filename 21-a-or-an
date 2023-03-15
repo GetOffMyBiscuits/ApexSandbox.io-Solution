@@ -1,0 +1,4 @@
+public String aOrAn(String word) {
+    if (Pattern.matches('^[AEIOUaeiou].*', word)) return 'an ' + word;
+    else return 'a ' + word;
+}
