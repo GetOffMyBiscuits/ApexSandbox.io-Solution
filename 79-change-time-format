@@ -4,7 +4,7 @@ public String changeTimeFormat(String strTime) {
     String newHour = String.valueOf(hour-12); 
     String minute = strTime.substringAfter(':');
 
-    if (hour < 12) return hr + ':' + minute + ' AM';
+    if (hour < 12 && hour > 0) return hr + ':' + minute + ' AM';
     else if (hour > 12) return newHour + ':' + minute + ' PM';
     else if (hour == 12) return hr + ':' + minute + ' PM';
     else if (hour == 0) return '12:'+minute+' AM';
