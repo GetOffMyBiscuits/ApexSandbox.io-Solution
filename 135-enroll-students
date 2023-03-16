@@ -1,5 +1,6 @@
 public void enrollStudents(List<String> emails, String className) {
-    List<apxio__Offered_Class__c> offClass = new apxio__Student__c();
+    List<apxio__Class_Enrollment__c> enroll = 
+        new apxio__Class_Enrollment__c();
 
     apxio__Class__c cls = 
         [SELECT Id, Name
@@ -18,8 +19,8 @@ public void enrollStudents(List<String> emails, String className) {
         ce.apxio__Student__c = student;
         ce.apxio__Offered_Class__c = cls;
 
-        offClass.add(ce);
+        enroll.add(ce);
     }
 
-    insert offClass;
+    insert enroll;
 }
