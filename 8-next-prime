@@ -1,6 +1,6 @@
 public Integer nextPrime(Integer num) {
     while (!isPrime(num)){
-        num+1
+        num+1;
     }
     return num
 }
