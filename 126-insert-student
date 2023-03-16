@@ -3,5 +3,6 @@ public Id insertStudent(String name, String email) {
                                   apxio__Email__c = email);
     insert student;
 
-    
+    Id studentId = apxio__Student__c.Id;
+    return studentId;
 }
