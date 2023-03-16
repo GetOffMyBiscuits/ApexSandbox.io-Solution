@@ -3,7 +3,7 @@ public void enrollStudents(List<String> emails, String className) {
         new List<apxio__Class_Enrollment__c>();
 
     apxio__Class__c cls = 
-        [SELECT Id, Name
+        [SELECT Id
          FROM apxio__Class__c 
          WHERE Name = :className];
 
