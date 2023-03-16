@@ -10,7 +10,7 @@ public String registerStudent(String name, String phone, String email) {
     apxio__Student__c studentQ = 
         [SELECT Id, apxio__Registration_Number__c
          FROM apxio__Student__c 
-         WHERE Id = student.Id];
+         WHERE Id = :student.Id];
     
     return studentQ.apxio__Registration_Number__c;
 }
