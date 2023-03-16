@@ -7,7 +7,7 @@ public String registerStudent(String name, String phone, String email) {
 
     insert student;
 
-    List<apxio__Student__c> studentQ = 
+    apxio__Student__c studentQ = 
         [Select apxio__Registration_Number__c
          From apxio__Student__c 
          Where apxio__Student__c.Id = student.Id]
