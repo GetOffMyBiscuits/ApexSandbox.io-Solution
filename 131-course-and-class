@@ -10,7 +10,7 @@ public void createCourseAndClass(String name, String description) {
 
         classObj.Id = course.Id;
         classObj.Name = name;
-        classObj.apxio__Course_Details__c = description?.left(255);
+        classObj.apxio__Description__c = description?.left(255);
 
         insert classObj;
     }
