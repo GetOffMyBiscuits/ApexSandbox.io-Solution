@@ -1,6 +1,6 @@
 public void enrollStudents(List<String> emails, String className) {
     List<apxio__Class_Enrollment__c> enroll = 
-        new apxio__Class_Enrollment__c();
+        new List<apxio__Class_Enrollment__c>();
 
     apxio__Class__c cls = 
         [SELECT Id, Name
