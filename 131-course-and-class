@@ -8,6 +8,7 @@ public void createCourseAndClass(String name, String description) {
 
         insert course;
 
+        classObj.Id = course.Id;
         classObj.Name = name;
         classObj.apxio__Course_Details__c = description?.left(255);
 
