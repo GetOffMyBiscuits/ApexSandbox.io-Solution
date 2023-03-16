@@ -3,7 +3,7 @@ public Integer nextPrime(Integer num) {
     while (!isPrime(prime)){
         prime++;
     }
-    return prime
+    return prime;
 }
 
 public Boolean isPrime(Integer num) {
