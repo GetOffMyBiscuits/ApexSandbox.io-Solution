@@ -9,7 +9,7 @@ public Integer nextPrime(Integer num) {
     else {
         prime = 2;
         while (!isPrime(prime)){
-            prime++
+            prime++;
         }
         return prime;
     }
