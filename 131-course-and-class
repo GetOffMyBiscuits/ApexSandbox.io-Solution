@@ -1,0 +1,16 @@
+public void createCourseAndClass(String name, String description) {    
+    apxio__Course__c course   = apxio__Course__c();
+    apxio__Class__c  classObj = apxio__Class__c();
+
+    if (name != null && description != null){
+        course.Name = name;
+        course.apxio__Course_Details__c = description;
+
+        insert course;
+
+        classObj.Name = name;
+        classObj.apxio__Course_Details__c = description?.left(255);
+
+        insert classObj;
+    }
+}
