@@ -1,0 +1,16 @@
+public Id classFromCourse(String courseName) {
+    List<apxio__Course__c> course = 
+        [SELECT Id, Name
+         FROM apxio__Course__c
+         WHERE apxio__Course__c.Name = :courseName];
+
+    if (course.size() > 0){
+        apxio__Class__c classObj = new apxio__Class__c();
+
+        classObj.apxio__Course__c = course.Id;
+        classObj.Name = courseName;
+        
+        insert classObj;
+    }
+    else return null;
+}
