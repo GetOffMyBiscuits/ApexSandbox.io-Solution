@@ -10,6 +10,7 @@ public Integer fibonacci(Integer n) {
         cur = last;
         last = sum;
         }
+        return sum;
     }
     return sum;
 }
