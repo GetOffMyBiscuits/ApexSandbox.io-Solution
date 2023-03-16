@@ -9,8 +9,7 @@ public Integer fibonacci(Integer n) {
         sum = last + cur;
         cur = last;
         last = sum;
-        return sum;
         }
     }
-    return 1;
+    return sum;
 }
