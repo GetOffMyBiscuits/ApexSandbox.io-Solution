@@ -1,8 +1,9 @@
 public Integer nextPrime(Integer num) {
-    while (!isPrime(num)){
-        num = num + 1;
+    prime = num;
+    while (!isPrime(prime)){
+        prime++;
     }
-    return num
+    return prime
 }
 
 public Boolean isPrime(Integer num) {
