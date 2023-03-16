@@ -1,5 +1,5 @@
 public Integer nextPrime(Integer num) {
-    prime = num;
+    Integer prime = num;
     while (!isPrime(prime)){
         prime++;
     }
