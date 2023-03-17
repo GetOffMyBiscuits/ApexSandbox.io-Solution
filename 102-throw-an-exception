@@ -1,7 +1,7 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     if (accounts == null) 
-        throw new IllegalArgumentException('There are no accounts');
+        throw new IllegalArgumentException('accounts should not be null');
     
     for (Account a: accounts){
         if (String.isBlank(a.BillingCity)) 
